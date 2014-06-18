@@ -28,11 +28,13 @@ Setup
 
 Next Steps
 ----------
-###SSH into Virtual Machine
+###SSH into Virtual Machine via bash
 1. Make sure you are located within the same directoy as your Vagrant file: 
 `cd /var/www/teachergraph.dev`
 2. Run: `vagrant up`
 3. You are now a secure guest in your virtual machine. You can interact with your MySQL Database, change Apache's settings, or even add a new packages via aptitude.
+
+###SSH into Virtual Machine via cmd
 **Windows**: Use PuTTY: A free Telnet/SSH Client: [Download PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 - Using PuTTY GUI:
 ```
