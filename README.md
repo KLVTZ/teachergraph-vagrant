@@ -1,9 +1,9 @@
-Teachergraph Vagrant
+Teachergraph via Vagrant
 ====================
 
 Vagrant is a lightweight, reproducible, portable environment that aims to mirror your production envirionment. Vagrant will change how you work. Say goodbye to the "works on my machine" excuse as Vagrant creates identical development environments for everyone on the team. 
 
-**Designed for Teachergraph**
+*Designed for Teachergraph*
 
 Use case
 --------
