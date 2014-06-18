@@ -1,0 +1,6 @@
+echo "--- Installing php5-curl module. ---"
+sudo apt-get install php5-curl -y
+echo "--- Installing vim. ---"
+sudo apt-get install vim -y
+echo "--- Importing current teachergraph schema. ---"
+mysql -uroot -psecret teachergraph < /vagrant/development.sql
