@@ -12,14 +12,14 @@ There are a number of problems that occur when updating your operating system. W
 Setup
 -----
 1. Download and install Vagrant on Mac OS X, Windows, or a popular distribution of Linux: [Download Vagrant](http://www.vagrantup.com/downloads.html)
-2. Download and install Virtualbox. VirtualBox is a free virtualization software: [Download](https://www.virtualbox.org/wiki/Downloads)
+2. Download and install Virtualbox. VirtualBox is a free virtualization software: [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 3. Enable virtualization within your BIOS for 64-bit architecture support.
 4. Download Ubuntu 12.04 Box into ~/Vagrant/ : [Download x64](http://files.vagrantup.com/precise64.box) || [Download x86](http://files.vagrantup.com/precise32.box). 
 5. Add Ubuntu box to Vagrant's Box list. The first parameter, after the add command, is a friendly name of the box you are adding. The second, is the path to where your box is located on your host machine: `vagrant box add ubuntu12.04x64 /Vagrant/precise64.box`
 6. Git clone this repository into the root directory of your teachergraph instance: 
 `git clone git@github.com:KLVTZ/teachergraph-vagrant.git`
 7. Make sure your .gitignore is ignoring `Vagrant` and `puphpet/`
-8. *Optional* Download the latest schema into the root directory of your teachergraph instance. If you rather use a separate, custom schema, remove the import command from [custom settings](#Custom Settings). 
+8. *Optional* Download the latest schema into the root directory of your teachergraph instance. If you rather use a separate, custom schema, remove the import command from [Custom Settings](#Custom-Settings). 
 9. You are ready to fire up vagrant: vagrant up
 10. Vagrant will download and process your box from the specified path. Vagrant will handle multiple processes during initialization. This includes downloading all required provisions for Ubuntu, Apache, MySQL, PHP, and other packages for a healthy developer environment.
 11. Once Vagrant has finished, you should see some elephants. If the majority of your terminal is green, then everything has gone well.
@@ -46,7 +46,7 @@ Port: 2222
 User: vagrant
 Passwd: vagrant
 ```
-- Before you try to connect, verify your VM using `cmd.exe`: `vagrant status`
+- Before you try to connect, verify your VM using *cmd.exe*: `vagrant status`
 - If it is down use: `vagrant up`
 
 ###Custom Settings
@@ -81,4 +81,6 @@ With Vagrant, you *suspend*, *halt*, or *destroy* the guest machine. Each of the
 **Detroying** the virtual machine by calling `vagrant destroy` will remove all traces of the guest machine from your system. It'll stop the guest machine, power it down, and remove all of the guest hard disks. Again, when you're ready to work again, just issue a vagrant up. The benefit of this is that no cruft is left on your machine. The disk space and RAM consumed by the guest machine is reclaimed and your host machine is left clean. The downside is that vagrant up to get working again will take some extra time since it has to reimport the machine and reprovision it.
 
 ###Troubleshoot
-
+- If you are new to the project, please make sure you `chmod -R 777 storage/`
+- TeacherGraph Migration is dependant on *php5-curl* module. Please make sure it is installed.
+- Be sure to email [me](xjustinpagex@gmail.com), if you experience any issues.
