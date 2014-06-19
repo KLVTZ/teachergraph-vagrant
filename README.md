@@ -21,7 +21,7 @@ Setup
 7. Make sure your .gitignore is ignoring `Vagrant` and `puphpet/`
 8. *Optional*: Download the latest schema into the root directory of your teachergraph instance. If you rather use a separate, custom schema, remove the import command from [custom settings](#custom-settings). 
 9. You are ready to fire up vagrant: `vagrant up`
-10. Vagrant will download and process your box from the specified path. Vagrant will handle multiple processes during initialization. This includes downloading all required provisions for Ubuntu, Apache, MySQL, PHP, and other packages for a healthy developer environment.
+10. Vagrant will download and process your box from the specified path. Vagrant will handle multiple processes during initialization. This includes downloading all required provisions for Ubuntu, Apache, MySQL, PHP, and other packages for a healthy developer environment. This may take 5-15 minutes, go grab a [beer](http://www.stonebrewing.com/ipa/)!
 11. Once Vagrant has finished, you should see some elephants. If the majority of your terminal is green, then everything has gone well.
 12. Edit your `/etc/hosts` file and add: `192.168.56.101 teachergraph.dev`. This will allow us to access teachergraph's local environment via `teachergraph.dev`. In addition, teachergraph has a dedicated private IP for a secure, dedicated, port connection.
 13. Test out TeacherGraph by going to `teachergraph.dev`. You should redirect to the login route. You're ready to rock-and-roll!
