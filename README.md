@@ -84,5 +84,6 @@ With Vagrant, you *suspend*, *halt*, or *destroy* the guest machine. Each of the
 - If you are new to the project, please make sure you `chmod -R 777 storage/`
 - TeacherGraph Migration is dependant on *php5-curl* module. Please make sure it is installed.
 - If you want additional control while maintaining the environment settings, or something did not go right with this repository, then head on over to <http://puphpet.com>. There you can just drag your `puphpet/config.yaml` file into your browser and the form will be filled with your previous values.
+- Everytime you `vagrant up` a *index.html* file will be added to the working directory, please remove or *.gitignrore* the file.
 
 **Still trouble?** Email me: <xjustinpagex@gmail.com>
