@@ -15,7 +15,7 @@ Setup
 2. Download and install Virtualbox. VirtualBox is a free virtualization software: [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 3. Enable virtualization within your BIOS for 64-bit architecture support.
 4. Download Ubuntu 12.04 Box into ~/Vagrant/ : [Download x64](http://files.vagrantup.com/precise64.box) || [Download x86](http://files.vagrantup.com/precise32.box). 
-5. Add Ubuntu box to Vagrant's Box list. The first parameter, after the add command, is a friendly name of the box you are adding. The second, is the path to where your box is located on your host machine: `vagrant box add ubuntu12.04x64 /Vagrant/precise64.box`
+5. Add Ubuntu box to Vagrant's Box list. The first parameter, after the add command, is a friendly name of the box you are adding. The second, is the path to where your box is located on your host machine: `vagrant box add ubuntu12.04x64 ~/Vagrant/precise64.box`
 6. Git clone this repository into the root directory of your teachergraph instance: 
 `git clone git@github.com:KLVTZ/teachergraph-vagrant.git`
 7. Make sure your .gitignore is ignoring `Vagrant` and `puphpet/`
